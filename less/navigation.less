@@ -14,7 +14,19 @@ nav {
             font-size: 1.8rem;
 
             a {
-                padding: 0 1.5rem;
+                padding: 1.5rem;
+
+                &:nth-child(odd) {
+                    &:hover {
+                        .animate-up-down(0.5rem, 0.5s);
+                    }
+                }
+
+                &:nth-child(even) {
+                    &:hover {
+                        .animate-up-down(-0.5rem, 0.5s);
+                    }
+                }
             }
 
             @media @mobile {
