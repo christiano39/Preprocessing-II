@@ -1,1 +1,10 @@
-// Mixins in here
+.flex (@direction, @wrap, @justify, @align) {
+    display: flex;
+    flex-flow: @direction @wrap;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.nav-border() {
+    border-bottom: 2px dashed @navigation-border;
+}

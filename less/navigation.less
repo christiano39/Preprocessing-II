@@ -1,1 +1,21 @@
-// Navigation Styles here
+nav {
+    .flex(row, nowrap, flex-end, center);
+    .nav-border();
+    padding: 2rem 0;
+
+    .nav-container {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        .flex(row, nowrap, space-between, center);
+
+        .links {
+            .flex(row, nowrap, space-evenly, center);
+            font-size: 1.8rem;
+
+            a {
+                padding: 0 1.5rem;
+            }
+        }
+    }
+}
