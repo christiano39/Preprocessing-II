@@ -7,6 +7,10 @@
     h2 {
       margin-top: 1.2rem;
     }
+
+    @media @mobile {
+      width: 90%;
+    }
   }
   
   .content-section {
@@ -20,6 +24,10 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 90%;
+      }
     }
 
     .img-content {
@@ -29,6 +37,15 @@
       img {
         border-radius: 10px;
       }
+
+      @media @mobile {
+        width: 90%;
+      }
+    }
+
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
     }
   }
 
@@ -44,6 +61,10 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+    }
+
+    @media @mobile {
+      flex-direction: column-reverse;
     }
   }
 
@@ -69,6 +90,19 @@
       .btn {
         .custom-btn();
       }
+
+      @media @mobile {
+        width: 90%;
+      }
     }
+
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media @mobile {
+    .flex(column, nowrap, flex-start, center);
   }
 }// home

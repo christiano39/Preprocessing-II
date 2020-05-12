@@ -199,6 +199,20 @@ nav .nav-container .links {
 nav .nav-container .links a {
   padding: 0 1.5rem;
 }
+@media (max-width: 500px) {
+  nav .nav-container .links {
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  nav .nav-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -217,6 +231,11 @@ nav .nav-container .links a {
 .home header h2 {
   margin-top: 1.2rem;
 }
+@media (max-width: 500px) {
+  .home header {
+    width: 90%;
+  }
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -227,12 +246,28 @@ nav .nav-container .links a {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 90%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -245,6 +280,11 @@ nav .nav-container .links a {
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .home .content-destination {
   width: 75%;
@@ -271,4 +311,23 @@ nav .nav-container .links a {
   text-align: center;
   padding: 1rem 0;
   border-radius: 1rem;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .home {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
