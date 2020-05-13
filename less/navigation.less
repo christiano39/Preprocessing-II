@@ -1,1 +1,42 @@
-// Navigation Styles here
+nav {
+    .flex(row, nowrap, flex-end, center);
+    .nav-border();
+    padding: 2rem 0;
+
+    .nav-container {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        .flex(row, nowrap, space-between, center);
+
+        .links {
+            .flex(row, nowrap, space-evenly, center);
+            font-size: 1.8rem;
+
+            a {
+                padding: 1.5rem;
+
+                &:nth-child(odd) {
+                    &:hover {
+                        .animate-up-down(0.5rem, 0.5s);
+                    }
+                }
+
+                &:nth-child(even) {
+                    &:hover {
+                        .animate-up-down(-0.5rem, 0.5s);
+                    }
+                }
+            }
+
+            @media @mobile {
+                margin-top: 1rem;
+                width: 100%;
+            }
+        }
+
+        @media @mobile {
+            .flex(column, nowrap, center, center);
+        }
+    }
+}
